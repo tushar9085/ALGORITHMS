@@ -4,6 +4,9 @@ def mergeSort(A):
     n = len(A)
     mid = int(n / 2)
 
+    print(n)
+    print(mid)
+
     if n == 1:
         return A
 
@@ -11,6 +14,9 @@ def mergeSort(A):
     R = mergeSort(A[mid:])
     C = []
     C.extend(merge(L, R))
+    print(C)
+    print(L)
+    print(R)
 
     return C
 
